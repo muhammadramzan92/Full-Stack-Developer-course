@@ -16,8 +16,7 @@ function Updatecount(){
     localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
 
 
-
-   // console.log(total);
+ console.log(total);
    
 
 }
