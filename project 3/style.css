@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+
+
+
+}
+h1{
+    color:white
+}
+
+.screen{
+width: 70%;
+background-color: black;
+cursor: pointer;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+
+}
+.control{
+    background-color: rgba(45, 42, 42, 0.526);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.control .timestamp{
+    margin-left: 10px;
+    font-weight: 10px;
+}
+
+.control .btn{
+    color: white;
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.control .fa-stop{
+    color: orangered;
+}
+.control .fa-play{
+    margin-right: 10px;
+    color:green
+    
+    
+}
+.timestamp{
+    color: white;
+}
+@media(max-width:800px){
+    .control, .screen{
+        width: 90%;
+    }
+}
