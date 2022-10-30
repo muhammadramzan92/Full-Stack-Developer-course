@@ -66,15 +66,15 @@ body {
     padding: 2%;
 }
  .mainbody {
-    height: calc(100vh - 70px) ;
+    /* height: calc(100vh - 70px) ; */
     display: flex;
-    overflow: hidden;
+    
  }
  .sidebar {
     height:100%;
     width: 230PX;
     background-color: white;
-    overflow: scroll;
+    /* overflow: scroll; */
  }
  .sidebar-categories{
     width: 100%;
@@ -99,21 +99,88 @@ body {
     cursor: pointer;
  }
  .sidebar::-webkit-scrollbar{
-    display: none;
+   display: none ;
  }
  hr{
     height: 1px;
     background-color: #e5e5e5;
     border: none;
+   
 
 
  }
- .videos{
-    background-color: #e5e5e5;
-    padding: 15px 25px;
-   height: 100%;
-   width: 100%;
-   overflow-y: scroll;
-   border-top: 1px solid #ddd;
+ .video {
+    display: flex;
+    background-color: white;
+    /* padding-right: 10px; */
+    padding-top: 5px;
+    flex-direction: column;
+    /* height: auto */
+    width: 24%;
+   
+
+  }
+ .logo img{
+  height: 30px;
+   border-radius: 100px ;
+  
  }
+ .video-detail{
+    display: flex;
+    margin-top: 10px;
+  
+   
+ }
+ .video-containner{
+    
+  
+    height: auto;
+width: 100%;
+/* overflow: hidden; */
+border-top: 1px solid #ddd;
+display: flex;
+/* overflow-y: scroll; */
+
+
+
+flex-wrap: wrap;
+
+ }
+ .cat-btn button{
+
+
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(96 96 96 0.);
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
+ }
+ .title{
+    margin: 0;
+    padding: 0px;
+    width: 70%;
+ }
+
+ .video video {
+    width: 100%;
+  }
+  .video {
+    margin: 0 15px 0 0;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  
+.style-scope.yt-icon {
+    width: 30px !important;
+  }
+ 
+
+
+
+
 
