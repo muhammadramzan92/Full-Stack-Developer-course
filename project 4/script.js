@@ -15,7 +15,7 @@ function calculate(){
          {
         const conversionrate = data.conversion_rate;
       const  roundOff = (conversionrate).toFixed(2);
-        rate.innerText = `1 ${currencyOneCode}=${roundOff} ${currencyTwoCode}`;
+        rate.innerText = `1 ${currencyOneCode}=${conversionrate} ${currencyTwoCode}`;
         const amount2 = new Intl.NumberFormat('en-US', {style: 'currency', currency: currencyTwoCode}).format((amountCurrencyOne.value * conversionrate).toFixed(2));
         amountCurrencytwo.value=amount2;
         });
